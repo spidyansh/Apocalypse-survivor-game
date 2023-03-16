@@ -1,71 +1,87 @@
-#game{
-    height: 570px;
-    width: 900px;
-    background-image: url('fb-game-background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    border: 4px solid black;
-    margin-left: 13%;
-    margin-top: 2%;
-    overflow: hidden;
-    position: relative;
+#game {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
 }
 
-body{
-    background-color: #e1f2de;
+body {
+  background-image: url("acoplypse-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
 }
 
-#pipe1{
-    position: absolute;
-    width: 50px;
-    height: 50%;
-    background-image: url('flappybird-pipe.png');
-    transform: rotate(180deg);
-
+#pipe1 {
+  position: absolute;
+  width: 100px;
+  height: 50%;
+  background-image: url("red-pipe.png");
+  transform: rotate(180deg);
 }
 
-#pipe2{
-    position: absolute;
-    width: 50px;
-    height: 30%;
-    top: 80%;
-    background-image: url('flappybird-pipe.png');
+#pipe2 {
+  position: absolute;
+  width: 100px;
+  height: 30%;
+  top: 80%;
+  background-image: url("red-pipe.png");
+}
+#pipe1b {
+  position: relative;
+  left: 70%;
+  width: 100px;
+  height: 50%;
+  background-image: url("red-pipe.png");
+  transform: rotate(180deg);
 }
 
-.obs{
-    left: 95%;
-    animation: move 4s ease-in-out infinite;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+#pipe2b {
+  position: relative;
+  left: 70%;
+  width: 100px;
+  height: 30%;
+  top: 80%;
+  background-image: url("red-pipe.png");
 }
 
+.obs {
+  left: 95%;
+  animation: move 3s linear infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.obs2 {
+  left: 95%;
+  animation: move 3s linear 1.5s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @keyframes move {
-    0%{
-        left: 100%;
-    }
-    100%{
-        left: -6%;
-    }
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -6%;
+  }
 }
 
-#bird{
-    position: absolute;
-    top: 200px;
-    left: 90px;
+#bird {
+  position: absolute;
+  top: 40%;
+  left: 190px;
 }
 
-#bird img{
-    height: 60px;
-    width: 80px;
+#bird img {
+  height: 70px;
+  width: 100px;
 }
 
-#score{
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-    margin-left: 2%;
-    margin-top: 2%;
+#score {
+  position: absolute;
+  top: 10%;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  margin-left: 2%;
 }
